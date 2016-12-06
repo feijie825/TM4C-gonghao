@@ -1,6 +1,6 @@
-´®¿Ú+CANË«Òýµ¼ CANÒýµ¼ÆðÊ¼µØÖ·0x4000,´®¿ÚÒýµ¼²¨ÌØÂÊ¸ÄÎª9600
+ä¸²å£+CANåŒå¼•å¯¼ CANå¼•å¯¼èµ·å§‹åœ°å€0x4000,ä¸²å£å¼•å¯¼æ³¢ç‰¹çŽ‡æ”¹ä¸º9600
 
-Òýµ¼³ÌÐòÃüÁî¸ÄÎª 42 4F 4F 54 XX YY
-XX ÏìÓ¦µÄ±íÎ»ºÅ YY ='C' CANÒýµ¼ 'U' ´®¿ÚÒýµ¼
+å¼•å¯¼ç¨‹åºå‘½ä»¤æ”¹ä¸º 42 4F 4F 54 XX YY
+XX å“åº”çš„è¡¨ä½å· YY ='C' CANå¼•å¯¼ 'U' ä¸²å£å¼•å¯¼
 
-UART_API.C ÖÐ Proc_Com_IBuf º¯ÊýÐÞ¸Ä
+UART_API.C ä¸­ Proc_Com_IBuf å‡½æ•°ä¿®æ”¹
