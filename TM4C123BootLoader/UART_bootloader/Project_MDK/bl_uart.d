@@ -1,0 +1,9 @@
+.\bl_uart.o: ..\User_C\bl_uart.c
+.\bl_uart.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\bl_uart.o: ..\..\inc\../inc/hw_gpio.h
+.\bl_uart.o: ..\..\inc\../inc/hw_memmap.h
+.\bl_uart.o: ..\..\inc\../inc/hw_sysctl.h
+.\bl_uart.o: ..\..\inc\../inc/hw_types.h
+.\bl_uart.o: ..\..\inc\../inc/hw_uart.h
+.\bl_uart.o: ..\User_C\../User_h/bl_config.h
+.\bl_uart.o: ..\User_C\../User_h/bl_uart.h

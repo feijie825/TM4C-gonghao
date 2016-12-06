@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\WORK\ZL\TM4C123BH6PGE-V1.0.0-TEST\project\小显示.uvproj
+Project File Date:  06/25/2015
+
+<h2>Output:</h2>
+Build target '小显示'
+compiling main.c...
+linking...
+Program Size: Code=52364 RO-data=2144 RW-data=1080 ZI-data=20456  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin -o .\output\小显示V-1.0.0.bin 小显示.axf
+".\小显示.axf" - 0 Errors, 0 Warning(s).

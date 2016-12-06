@@ -1,0 +1,52 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Include Sub Directories=1
+Project Tagfile=
+Project Wordfile=
+Project TpFile=
+Filter=
+Create Tagfile=0
+[Group]
+0=源程序
+1=头文件
+[Files - 头文件]
+0=inc\asmdefs.h
+1=inc\hw_adc.h
+2=inc\hw_can.h
+3=inc\hw_comp.h
+4=inc\hw_eeprom.h
+5=inc\hw_fan.h
+6=inc\hw_flash.h
+7=inc\hw_gpio.h
+8=inc\hw_hibernate.h
+9=inc\hw_i2c.h
+10=inc\hw_ints.h
+11=inc\hw_lpc.h
+12=inc\hw_memmap.h
+13=inc\hw_nvic.h
+14=inc\hw_peci.h
+15=inc\hw_pwm.h
+16=inc\hw_qei.h
+17=inc\hw_ssi.h
+18=inc\hw_sysctl.h
+19=inc\hw_sysexc.h
+20=inc\hw_timer.h
+21=inc\hw_types.h
+22=inc\hw_uart.h
+23=inc\hw_udma.h
+24=inc\hw_usb.h
+25=inc\hw_watchdog.h
+26=inc\inc.sgxx
+27=inc\tm4c123gh6pm.h
+[Files - 源程序]
+0=boot_loader\bl_packet.c
+1=boot_loader\bl_can.c
+2=boot_loader\bl_check.c
+3=boot_loader\bl_config.c
+4=boot_loader\bl_flash.c
+5=boot_loader\bl_startup_rvmdk.S
+6=boot_loader\Reset_InSram.s
+7=driverlib\gpio.c

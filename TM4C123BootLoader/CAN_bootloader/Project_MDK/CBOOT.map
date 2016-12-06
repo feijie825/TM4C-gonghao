@@ -1,0 +1,422 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Standard]
+
+==============================================================================
+
+Section Cross References
+
+    bl_can.o(.text) refers to gpio.o(.text) for GPIOPinRead
+    bl_can.o(.text) refers to sysctl.o(.text) for SysCtlPeripheralEnable
+    bl_can.o(.text) refers to systick.o(.text) for SysTickPeriodSet
+    bl_can.o(.text) refers to bl_can.o(.data) for .data
+    bl_can.o(.text) refers to bl_startup_rvmdk.o(.text) for Delay
+    bl_can.o(.text) refers to disp.o(.text) for Disp_Blank
+    bl_can.o(.text) refers to bl_flash.o(.text) for BLInternalFlashStartAddrCheck
+    bl_can.o(.text) refers to bl_can.o(.bss) for .bss
+    bl_can.o(.text) refers to interrupt.o(.text) for IntPrioritySet
+    bl_check.o(.text) refers to bl_startup_rvmdk.o(.text) for Delay
+    bl_check.o(.text) refers to bl_can.o(.data) for Board_Id
+    bl_check.o(.text) refers to bl_can.o(.bss) for BOOT_EN
+    disp.o(.text) refers to gpio.o(.text) for GPIOPinWrite
+    disp.o(.text) refers to sysctl.o(.emb_text) for SysCtlDelay
+    disp.o(.text) refers to disp.o(.data) for .data
+    disp.o(.text) refers to disp.o(.constdata) for .constdata
+    disp.o(.text) refers to bl_can.o(.data) for Board_Id
+    gpio.o(.text) refers to interrupt.o(.text) for IntRegister
+    gpio.o(.text) refers to gpio.o(.constdata) for .constdata
+    sysctl.o(.text) refers to interrupt.o(.text) for IntRegister
+    sysctl.o(.text) refers to cpu.o(.emb_text) for CPUwfi
+    sysctl.o(.text) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(.text) refers to sysctl.o(.emb_text) for SysCtlDelay
+    systick.o(.text) refers to interrupt.o(.text) for IntRegister
+    interrupt.o(.text) refers to cpu.o(.emb_text) for CPUcpsie
+    interrupt.o(.text) refers to interrupt.o(vtable) for vtable
+    interrupt.o(.text) refers to interrupt.o(.constdata) for .constdata
+    bl_startup_rvmdk.o(RESET) refers to bl_startup_rvmdk.o(.bss) for g_pulStack
+    bl_startup_rvmdk.o(RESET) refers to bl_startup_rvmdk.o(.text) for IntDefaultHandler
+    bl_startup_rvmdk.o(RESET) refers to bl_can.o(.text) for SysTickIntHandler
+    bl_startup_rvmdk.o(RESET) refers to bl_can.o(.bss) for BOOT_EN
+    bl_startup_rvmdk.o(.text) refers to bl_check.o(.text) for CheckForceUpdate
+    bl_startup_rvmdk.o(.text) refers to bl_can.o(.text) for ConfigureCAN
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing bl_can.o(.data), (1 bytes).
+
+1 unused section(s) (total 1 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ..\..\driverlib\cpu.c                    0x00000000   Number         0  cpu.o ABSOLUTE
+    ..\..\driverlib\gpio.c                   0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\..\driverlib\interrupt.c              0x00000000   Number         0  interrupt.o ABSOLUTE
+    ..\..\driverlib\sysctl.c                 0x00000000   Number         0  sysctl.o ABSOLUTE
+    ..\..\driverlib\systick.c                0x00000000   Number         0  systick.o ABSOLUTE
+    ..\User_C\DISP.C                         0x00000000   Number         0  disp.o ABSOLUTE
+    ..\User_C\bl_can.c                       0x00000000   Number         0  bl_can.o ABSOLUTE
+    ..\User_C\bl_check.c                     0x00000000   Number         0  bl_check.o ABSOLUTE
+    ..\User_C\bl_flash.c                     0x00000000   Number         0  bl_flash.o ABSOLUTE
+    ..\User_C\bl_packet.c                    0x00000000   Number         0  bl_packet.o ABSOLUTE
+    ..\\..\\driverlib\\cpu.c                 0x00000000   Number         0  cpu.o ABSOLUTE
+    ..\\..\\driverlib\\sysctl.c              0x00000000   Number         0  sysctl.o ABSOLUTE
+    ..\\User_C\\bl_config.c                  0x00000000   Number         0  bl_startup_rvmdk.o ABSOLUTE
+    RESET                                    0x00002000   Section      204  bl_startup_rvmdk.o(RESET)
+    $v0                                      0x00002044   Number         0  bl_startup_rvmdk.o(RESET)
+    NmiSR                                    0x000020af   Thumb Code     0  bl_startup_rvmdk.o(RESET)
+    FaultISR                                 0x000020b1   Thumb Code     0  bl_startup_rvmdk.o(RESET)
+    UpdateHandler                            0x000020b3   Thumb Code     0  bl_startup_rvmdk.o(RESET)
+    .emb_text                                0x1fffe0cc   Section        6  sysctl.o(.emb_text)
+    $v0                                      0x1fffe0cc   Number         0  sysctl.o(.emb_text)
+    .emb_text                                0x1fffe0d4   Section       38  cpu.o(.emb_text)
+    $v0                                      0x1fffe0d4   Number         0  cpu.o(.emb_text)
+    .text                                    0x1fffe0fc   Section        0  bl_can.o(.text)
+    CANInit                                  0x1fffe49d   Thumb Code    38  bl_can.o(.text)
+    CANMessageSetRx                          0x1fffe4c3   Thumb Code   148  bl_can.o(.text)
+    CANMessageGetRx                          0x1fffe557   Thumb Code   116  bl_can.o(.text)
+    CANMessageSetTx                          0x1fffe5cb   Thumb Code    82  bl_can.o(.text)
+    ConfigureCANInterface                    0x1fffe61d   Thumb Code    32  bl_can.o(.text)
+    PacketRead                               0x1fffe63d   Thumb Code    98  bl_can.o(.text)
+    PacketWrite                              0x1fffe69f   Thumb Code    48  bl_can.o(.text)
+    .text                                    0x1fffea34   Section        0  bl_check.o(.text)
+    .text                                    0x1fffeae8   Section        0  bl_flash.o(.text)
+    .text                                    0x1fffeb7c   Section        0  disp.o(.text)
+    .text                                    0x1fffec90   Section        0  gpio.o(.text)
+    _GPIOIntNumberGet                        0x1fffec91   Thumb Code    52  gpio.o(.text)
+    .text                                    0x1ffff428   Section        0  sysctl.o(.text)
+    _SysCtlMemTimingGet                      0x1ffff429   Thumb Code    30  sysctl.o(.text)
+    _SysCtlFrequencyGet                      0x1ffff447   Thumb Code    78  sysctl.o(.text)
+    .text                                    0x1ffffd8c   Section        0  systick.o(.text)
+    .text                                    0x1ffffe0c   Section        0  interrupt.o(.text)
+    _IntDefaultHandler                       0x1ffffe0d   Thumb Code     2  interrupt.o(.text)
+    .text                                    0x20000080   Section       60  bl_startup_rvmdk.o(.text)
+    $v0                                      0x20000080   Number         0  bl_startup_rvmdk.o(.text)
+    Reset_Handler_In_SRAM                    0x20000081   Thumb Code     0  bl_startup_rvmdk.o(.text)
+    UpdateHandler_In_SRAM                    0x200000a9   Thumb Code     0  bl_startup_rvmdk.o(.text)
+    IntDefaultHandler                        0x200000b3   Thumb Code     0  bl_startup_rvmdk.o(.text)
+    .constdata                               0x200000bc   Section       33  disp.o(.constdata)
+    .constdata                               0x200000e0   Section      528  gpio.o(.constdata)
+    g_ppui32GPIOIntMapBlizzard               0x200000e0   Data         192  gpio.o(.constdata)
+    g_ppui32GPIOIntMapSnowflake              0x200001a0   Data         192  gpio.o(.constdata)
+    g_pui32GPIOBaseAddrs                     0x20000260   Data         144  gpio.o(.constdata)
+    .constdata                               0x200002f0   Section      452  sysctl.o(.constdata)
+    g_pui32VCOFrequencies                    0x200002f0   Data           8  sysctl.o(.constdata)
+    g_pui32Xtals                             0x200002f8   Data         108  sysctl.o(.constdata)
+    g_pppui32XTALtoVCO                       0x20000364   Data         288  sysctl.o(.constdata)
+    g_sXTALtoMEMTIM                          0x20000484   Data          48  sysctl.o(.constdata)
+    .constdata                               0x200004b4   Section      268  interrupt.o(.constdata)
+    g_pui32Priority                          0x200004b4   Data          32  interrupt.o(.constdata)
+    g_pui32Regs                              0x200004d4   Data         156  interrupt.o(.constdata)
+    g_pui32EnRegs                            0x20000570   Data          20  interrupt.o(.constdata)
+    g_pui32Dii16Regs                         0x20000584   Data          20  interrupt.o(.constdata)
+    g_pui32PendRegs                          0x20000598   Data          20  interrupt.o(.constdata)
+    g_pui32UnpendRegs                        0x200005ac   Data          20  interrupt.o(.constdata)
+    .data                                    0x200005c0   Section       48  bl_can.o(.data)
+    Program_EN                               0x200005c0   Data           1  bl_can.o(.data)
+    BLEN                                     0x200005c1   Data           1  bl_can.o(.data)
+    Currnet_Rx_ID                            0x200005c2   Data           1  bl_can.o(.data)
+    CAN_TX_ID                                0x200005c3   Data           1  bl_can.o(.data)
+    Can_Rx_ID                                0x200005c4   Data           1  bl_can.o(.data)
+    g_ui32TransferAddress                    0x200005cc   Data           4  bl_can.o(.data)
+    g_ui32TransferSize                       0x200005d0   Data           4  bl_can.o(.data)
+    g_ui32StartSize                          0x200005d4   Data           4  bl_can.o(.data)
+    g_ui32StartAddress                       0x200005d8   Data           4  bl_can.o(.data)
+    g_pui8CommandBuffer                      0x200005e0   Data           8  bl_can.o(.data)
+    g_ui32StartValues                        0x200005e8   Data           8  bl_can.o(.data)
+    .data                                    0x200005f0   Section        8  disp.o(.data)
+    vtable                                   0x20000800   Section      620  interrupt.o(vtable)
+    g_pfnRAMVectors                          0x20000800   Data         620  interrupt.o(vtable)
+    .bss                                     0x20000a6c   Section       16  bl_can.o(.bss)
+    .bss                                     0x20000a7c   Section     1600  bl_startup_rvmdk.o(.bss)
+    g_pulStack                               0x20000a7c   Data        1600  bl_startup_rvmdk.o(.bss)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00002000   Data           0  bl_startup_rvmdk.o(RESET)
+    ProcessorInit                            0x00002045   Thumb Code     0  bl_startup_rvmdk.o(RESET)
+    Reset_Handler                            0x00002097   Thumb Code     0  bl_startup_rvmdk.o(RESET)
+    SysCtlDelay                              0x1fffe0cd   Thumb Code     6  sysctl.o(.emb_text)
+    CPUcpsid                                 0x1fffe0d5   Thumb Code     8  cpu.o(.emb_text)
+    CPUprimask                               0x1fffe0dd   Thumb Code     6  cpu.o(.emb_text)
+    CPUcpsie                                 0x1fffe0e3   Thumb Code     8  cpu.o(.emb_text)
+    CPUwfi                                   0x1fffe0eb   Thumb Code     4  cpu.o(.emb_text)
+    CPUbasepriSet                            0x1fffe0ef   Thumb Code     6  cpu.o(.emb_text)
+    CPUbasepriGet                            0x1fffe0f5   Thumb Code     6  cpu.o(.emb_text)
+    SysTickIntHandler                        0x1fffe0fd   Thumb Code    58  bl_can.o(.text)
+    SSIConfigSetExpClk                       0x1fffe137   Thumb Code    70  bl_can.o(.text)
+    SSIEnable                                0x1fffe17d   Thumb Code    10  bl_can.o(.text)
+    Init_Gpio                                0x1fffe187   Thumb Code   722  bl_can.o(.text)
+    Init_Ssi                                 0x1fffe459   Thumb Code    46  bl_can.o(.text)
+    Init_SysTick                             0x1fffe487   Thumb Code    22  bl_can.o(.text)
+    UpdaterCAN                               0x1fffe6cf   Thumb Code   588  bl_can.o(.text)
+    AppUpdaterCAN                            0x1fffe91b   Thumb Code    10  bl_can.o(.text)
+    ConfigureCAN                             0x1fffe925   Thumb Code   260  bl_can.o(.text)
+    CheckForceUpdate                         0x1fffea35   Thumb Code   150  bl_check.o(.text)
+    BLInternalFlashErase                     0x1fffeae9   Thumb Code    16  bl_flash.o(.text)
+    BLInternalFlashProgram                   0x1fffeaf9   Thumb Code    36  bl_flash.o(.text)
+    BLInternalFlashSizeGet                   0x1fffeb1d   Thumb Code    12  bl_flash.o(.text)
+    BLInternalFlashStartAddrCheck            0x1fffeb29   Thumb Code    54  bl_flash.o(.text)
+    BLInternalFlashErrorClear                0x1fffeb5f   Thumb Code     8  bl_flash.o(.text)
+    BLInternalFlashErrorCheck                0x1fffeb67   Thumb Code    10  bl_flash.o(.text)
+    SSIDataPut                               0x1fffeb7d   Thumb Code    10  disp.o(.text)
+    SSIDataLen                               0x1fffeb87   Thumb Code    18  disp.o(.text)
+    Reset_HD7279                             0x1fffeb99   Thumb Code    72  disp.o(.text)
+    Disp_Data                                0x1fffebe1   Thumb Code    88  disp.o(.text)
+    Disp_Boot                                0x1fffec39   Thumb Code    52  disp.o(.text)
+    Disp_Blank                               0x1fffec6d   Thumb Code    20  disp.o(.text)
+    GPIODirModeSet                           0x1fffecc5   Thumb Code    46  gpio.o(.text)
+    GPIODirModeGet                           0x1fffecf3   Thumb Code    38  gpio.o(.text)
+    GPIOIntTypeSet                           0x1fffed19   Thumb Code    94  gpio.o(.text)
+    GPIOIntTypeGet                           0x1fffed77   Thumb Code    74  gpio.o(.text)
+    GPIOPadConfigSet                         0x1fffedc1   Thumb Code   332  gpio.o(.text)
+    GPIOPadConfigGet                         0x1fffef0d   Thumb Code   198  gpio.o(.text)
+    GPIOIntEnable                            0x1fffefd3   Thumb Code    14  gpio.o(.text)
+    GPIOIntDisable                           0x1fffefe1   Thumb Code    14  gpio.o(.text)
+    GPIOIntStatus                            0x1fffefef   Thumb Code    16  gpio.o(.text)
+    GPIOIntClear                             0x1fffefff   Thumb Code     6  gpio.o(.text)
+    GPIOIntRegister                          0x1ffff005   Thumb Code    28  gpio.o(.text)
+    GPIOIntUnregister                        0x1ffff021   Thumb Code    24  gpio.o(.text)
+    GPIOPinRead                              0x1ffff039   Thumb Code     6  gpio.o(.text)
+    GPIOPinWrite                             0x1ffff03f   Thumb Code     6  gpio.o(.text)
+    GPIOPinTypeADC                           0x1ffff045   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeCAN                           0x1ffff063   Thumb Code    46  gpio.o(.text)
+    GPIOPinTypeComparator                    0x1ffff091   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeEPI                           0x1ffff0af   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeEthernetLED                   0x1ffff0cd   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeEthernetMII                   0x1ffff0eb   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeGPIOInput                     0x1ffff109   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeGPIOOutput                    0x1ffff127   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeGPIOOutputOD                  0x1ffff145   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeI2C                           0x1ffff163   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeI2CSCL                        0x1ffff181   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeLCD                           0x1ffff19f   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeLPC                           0x1ffff1bd   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypePECIRx                        0x1ffff1db   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypePECITx                        0x1ffff1f9   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypePWM                           0x1ffff217   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeQEI                           0x1ffff235   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeSSI                           0x1ffff253   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeTimer                         0x1ffff271   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeUART                          0x1ffff28f   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeUSBAnalog                     0x1ffff2ad   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeUSBDigital                    0x1ffff2cb   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeWakeHigh                      0x1ffff2e9   Thumb Code    32  gpio.o(.text)
+    GPIOPinTypeWakeLow                       0x1ffff309   Thumb Code    32  gpio.o(.text)
+    GPIOPinTypeKBRow                         0x1ffff329   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeKBColumn                      0x1ffff347   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeLEDSeq                        0x1ffff365   Thumb Code    30  gpio.o(.text)
+    GPIOPinTypeCIR                           0x1ffff383   Thumb Code    30  gpio.o(.text)
+    GPIOPinWakeStatus                        0x1ffff3a1   Thumb Code     6  gpio.o(.text)
+    GPIOPinConfigure                         0x1ffff3a7   Thumb Code    66  gpio.o(.text)
+    GPIODMATriggerEnable                     0x1ffff3e9   Thumb Code    14  gpio.o(.text)
+    GPIODMATriggerDisable                    0x1ffff3f7   Thumb Code    14  gpio.o(.text)
+    GPIOADCTriggerEnable                     0x1ffff405   Thumb Code    14  gpio.o(.text)
+    GPIOADCTriggerDisable                    0x1ffff413   Thumb Code    14  gpio.o(.text)
+    SysCtlSRAMSizeGet                        0x1ffff495   Thumb Code    10  sysctl.o(.text)
+    SysCtlFlashSizeGet                       0x1ffff49f   Thumb Code    42  sysctl.o(.text)
+    SysCtlFlashSectorSizeGet                 0x1ffff4c9   Thumb Code    40  sysctl.o(.text)
+    SysCtlPeripheralPresent                  0x1ffff4f1   Thumb Code    40  sysctl.o(.text)
+    SysCtlPeripheralReady                    0x1ffff519   Thumb Code    40  sysctl.o(.text)
+    SysCtlPeripheralPowerOn                  0x1ffff541   Thumb Code    36  sysctl.o(.text)
+    SysCtlPeripheralPowerOff                 0x1ffff565   Thumb Code    36  sysctl.o(.text)
+    SysCtlPeripheralReset                    0x1ffff589   Thumb Code    58  sysctl.o(.text)
+    SysCtlPeripheralEnable                   0x1ffff5c3   Thumb Code    36  sysctl.o(.text)
+    SysCtlPeripheralDisable                  0x1ffff5e7   Thumb Code    36  sysctl.o(.text)
+    SysCtlPeripheralSleepEnable              0x1ffff60b   Thumb Code    36  sysctl.o(.text)
+    SysCtlPeripheralSleepDisable             0x1ffff62f   Thumb Code    36  sysctl.o(.text)
+    SysCtlPeripheralDeepSleepEnable          0x1ffff653   Thumb Code    36  sysctl.o(.text)
+    SysCtlPeripheralDeepSleepDisable         0x1ffff677   Thumb Code    36  sysctl.o(.text)
+    SysCtlPeripheralClockGating              0x1ffff69b   Thumb Code    64  sysctl.o(.text)
+    SysCtlIntRegister                        0x1ffff6db   Thumb Code    20  sysctl.o(.text)
+    SysCtlIntUnregister                      0x1ffff6ef   Thumb Code    18  sysctl.o(.text)
+    SysCtlIntEnable                          0x1ffff701   Thumb Code    12  sysctl.o(.text)
+    SysCtlIntDisable                         0x1ffff70d   Thumb Code    12  sysctl.o(.text)
+    SysCtlIntClear                           0x1ffff719   Thumb Code     8  sysctl.o(.text)
+    SysCtlIntStatus                          0x1ffff721   Thumb Code    16  sysctl.o(.text)
+    SysCtlLDOSleepSet                        0x1ffff731   Thumb Code     6  sysctl.o(.text)
+    SysCtlLDOSleepGet                        0x1ffff737   Thumb Code     6  sysctl.o(.text)
+    SysCtlLDODeepSleepSet                    0x1ffff73d   Thumb Code     6  sysctl.o(.text)
+    SysCtlLDODeepSleepGet                    0x1ffff743   Thumb Code     6  sysctl.o(.text)
+    SysCtlSleepPowerSet                      0x1ffff749   Thumb Code     6  sysctl.o(.text)
+    SysCtlDeepSleepPowerSet                  0x1ffff74f   Thumb Code     6  sysctl.o(.text)
+    SysCtlReset                              0x1ffff755   Thumb Code     8  sysctl.o(.text)
+    SysCtlSleep                              0x1ffff75d   Thumb Code     4  sysctl.o(.text)
+    SysCtlDeepSleep                          0x1ffff761   Thumb Code    28  sysctl.o(.text)
+    SysCtlResetCauseGet                      0x1ffff77d   Thumb Code     8  sysctl.o(.text)
+    SysCtlResetCauseClear                    0x1ffff785   Thumb Code    12  sysctl.o(.text)
+    SysCtlMOSCConfigSet                      0x1ffff791   Thumb Code     8  sysctl.o(.text)
+    SysCtlPIOSCCalibrate                     0x1ffff799   Thumb Code    64  sysctl.o(.text)
+    SysCtlResetBehaviorSet                   0x1ffff7d9   Thumb Code     6  sysctl.o(.text)
+    SysCtlResetBehaviorGet                   0x1ffff7df   Thumb Code     6  sysctl.o(.text)
+    SysCtlClockFreqSet                       0x1ffff7e5   Thumb Code   600  sysctl.o(.text)
+    SysCtlClockSet                           0x1ffffa3d   Thumb Code   220  sysctl.o(.text)
+    SysCtlClockGet                           0x1ffffb19   Thumb Code   296  sysctl.o(.text)
+    SysCtlDeepSleepClockSet                  0x1ffffc41   Thumb Code     6  sysctl.o(.text)
+    SysCtlDeepSleepClockConfigSet            0x1ffffc47   Thumb Code   160  sysctl.o(.text)
+    SysCtlPWMClockSet                        0x1ffffce7   Thumb Code    14  sysctl.o(.text)
+    SysCtlPWMClockGet                        0x1ffffcf5   Thumb Code    22  sysctl.o(.text)
+    SysCtlGPIOAHBEnable                      0x1ffffd0b   Thumb Code    18  sysctl.o(.text)
+    SysCtlGPIOAHBDisable                     0x1ffffd1d   Thumb Code    18  sysctl.o(.text)
+    SysCtlUSBPLLEnable                       0x1ffffd2f   Thumb Code    12  sysctl.o(.text)
+    SysCtlUSBPLLDisable                      0x1ffffd3b   Thumb Code    12  sysctl.o(.text)
+    SysCtlVoltageEventConfig                 0x1ffffd47   Thumb Code     6  sysctl.o(.text)
+    SysCtlVoltageEventStatus                 0x1ffffd4d   Thumb Code     6  sysctl.o(.text)
+    SysCtlVoltageEventClear                  0x1ffffd53   Thumb Code    10  sysctl.o(.text)
+    SysCtlNMIStatus                          0x1ffffd5d   Thumb Code     6  sysctl.o(.text)
+    SysCtlNMIClear                           0x1ffffd63   Thumb Code    10  sysctl.o(.text)
+    SysCtlClockOutConfig                     0x1ffffd6d   Thumb Code    12  sysctl.o(.text)
+    SysCtlAltClkConfig                       0x1ffffd79   Thumb Code     6  sysctl.o(.text)
+    SysTickEnable                            0x1ffffd8d   Thumb Code    14  systick.o(.text)
+    SysTickDisable                           0x1ffffd9b   Thumb Code    14  systick.o(.text)
+    SysTickIntRegister                       0x1ffffda9   Thumb Code    24  systick.o(.text)
+    SysTickIntUnregister                     0x1ffffdc1   Thumb Code    18  systick.o(.text)
+    SysTickIntEnable                         0x1ffffdd3   Thumb Code    14  systick.o(.text)
+    SysTickIntDisable                        0x1ffffde1   Thumb Code    14  systick.o(.text)
+    SysTickPeriodSet                         0x1ffffdef   Thumb Code    10  systick.o(.text)
+    SysTickPeriodGet                         0x1ffffdf9   Thumb Code    10  systick.o(.text)
+    SysTickValueGet                          0x1ffffe03   Thumb Code     8  systick.o(.text)
+    IntMasterEnable                          0x1ffffe0f   Thumb Code    14  interrupt.o(.text)
+    IntMasterDisable                         0x1ffffe1d   Thumb Code    14  interrupt.o(.text)
+    IntRegister                              0x1ffffe2b   Thumb Code    38  interrupt.o(.text)
+    IntUnregister                            0x1ffffe51   Thumb Code    10  interrupt.o(.text)
+    IntPriorityGroupingSet                   0x1ffffe5b   Thumb Code    18  interrupt.o(.text)
+    IntPriorityGroupingGet                   0x1ffffe6d   Thumb Code    30  interrupt.o(.text)
+    IntPrioritySet                           0x1ffffe8b   Thumb Code    32  interrupt.o(.text)
+    IntPriorityGet                           0x1ffffeab   Thumb Code    22  interrupt.o(.text)
+    IntEnable                                0x1ffffec1   Thumb Code    92  interrupt.o(.text)
+    IntDisable                               0x1fffff1d   Thumb Code    92  interrupt.o(.text)
+    IntIsEnabled                             0x1fffff79   Thumb Code    90  interrupt.o(.text)
+    IntPendSet                               0x1fffffd3   Thumb Code    74  interrupt.o(.text)
+    IntPendClear                             0x2000001d   Thumb Code    60  interrupt.o(.text)
+    IntPriorityMaskSet                       0x20000059   Thumb Code     4  interrupt.o(.text)
+    IntPriorityMaskGet                       0x2000005d   Thumb Code     4  interrupt.o(.text)
+    IntTrigger                               0x20000061   Thumb Code     8  interrupt.o(.text)
+    StartApplication                         0x2000008f   Thumb Code     0  bl_startup_rvmdk.o(.text)
+    Delay                                    0x200000b5   Thumb Code     0  bl_startup_rvmdk.o(.text)
+    Disp_Code_Tab                            0x200000bc   Data          33  disp.o(.constdata)
+    Board_Id                                 0x200005c5   Data           1  bl_can.o(.data)
+    Timer_Uart                               0x200005c6   Data           1  bl_can.o(.data)
+    Timer_CAN                                0x200005c7   Data           1  bl_can.o(.data)
+    Disp_Sts                                 0x200005c8   Data           1  bl_can.o(.data)
+    Timer_1ms                                0x200005dc   Data           4  bl_can.o(.data)
+    Disp_Buf                                 0x200005f0   Data           8  disp.o(.data)
+    BOOT_EN                                  0x20000a6c   Data          16  bl_can.o(.bss)
+    Image$$ZI$$Limit                         0x20000a6c   Number         0  anon$$obj.o(linker$$defined$$symbols)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00002097
+
+  Load Region FLASH (Base: 0x00002000, Size: 0x00002a6c, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region RESET (Base: 0x00002000, Size: 0x000000cc, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00002000   0x000000cc   Code   RO          329  * RESET               bl_startup_rvmdk.o
+
+
+    Execution Region RO (Base: 0x1fffe0cc, Size: 0x000024f4, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fffe0cc   0x00000006   Code   RO          257    .emb_text           sysctl.o
+    0x1fffe0d2   0x00000002   PAD
+    0x1fffe0d4   0x00000026   Code   RO          318    .emb_text           cpu.o
+    0x1fffe0fa   0x00000002   PAD
+    0x1fffe0fc   0x00000938   Code   RO            1    .text               bl_can.o
+    0x1fffea34   0x000000b4   Code   RO          114    .text               bl_check.o
+    0x1fffeae8   0x00000094   Code   RO          142    .text               bl_flash.o
+    0x1fffeb7c   0x00000114   Code   RO          178    .text               disp.o
+    0x1fffec90   0x00000798   Code   RO          219    .text               gpio.o
+    0x1ffff428   0x00000964   Code   RO          258    .text               sysctl.o
+    0x1ffffd8c   0x0000007e   Code   RO          288    .text               systick.o
+    0x1ffffe0a   0x00000002   PAD
+    0x1ffffe0c   0x00000274   Code   RO          303    .text               interrupt.o
+    0x20000080   0x0000003c   Code   RO          330    .text               bl_startup_rvmdk.o
+    0x200000bc   0x00000021   Data   RO          179    .constdata          disp.o
+    0x200000dd   0x00000003   PAD
+    0x200000e0   0x00000210   Data   RO          220    .constdata          gpio.o
+    0x200002f0   0x000001c4   Data   RO          259    .constdata          sysctl.o
+    0x200004b4   0x0000010c   Data   RO          304    .constdata          interrupt.o
+
+
+    Execution Region RW (Base: 0x200005c0, Size: 0x000004ac, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x200005c0   0x00000030   Data   RW            3    .data               bl_can.o
+    0x200005f0   0x00000008   Data   RW          180    .data               disp.o
+    0x200005f8   0x00000208   PAD
+    0x20000800   0x0000026c   Data   RW          305    vtable              interrupt.o
+
+
+    Execution Region ZI (Base: 0x20000a6c, Size: 0x00000650, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000a6c   0x00000000   Data   RW          336    linker$$defined$$symbols  anon$$obj.o
+    0x20000a6c   0x00000010   Zero   RW            2    .bss                bl_can.o
+    0x20000a7c   0x00000640   Zero   RW          328    .bss                bl_startup_rvmdk.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      2360        128          0         48         16      13068   bl_can.o
+       180         30          0          0          0       1374   bl_check.o
+       148         12          0          0          0       2343   bl_flash.o
+       264         88          0          0       1600        608   bl_startup_rvmdk.o
+        38          0          0          0          0        596   cpu.o
+       276         16         33          8          0       2572   disp.o
+      1944         24        528          0          0      14205   gpio.o
+       628         24        268        620          0       5264   interrupt.o
+      2410        178        452          0          0      14505   sysctl.o
+       126          0          0          0          0       1708   systick.o
+
+    ----------------------------------------------------------------------
+      8380        500       1284       1196       1616      56243   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         6          0          3        520          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      8380        500       1284       1196       1616      54043   Grand Totals
+      8380        500       1284       1196       1616      54043   ELF Image Totals
+      8380        500       1284       1196          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 9664 (   9.44kB)
+    Total RW  Size (RW Data + ZI Data)              2812 (   2.75kB)
+    Total ROM Size (Code + RO Data + RW Data)      10860 (  10.61kB)
+
+==============================================================================
+

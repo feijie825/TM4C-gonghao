@@ -1,0 +1,17 @@
+.\bl_usb.o: ..\User_C\bl_usb.c
+.\bl_usb.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\bl_usb.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\bl_usb.o: ..\..\inc\../inc/hw_gpio.h
+.\bl_usb.o: ..\..\inc\../inc/hw_memmap.h
+.\bl_usb.o: ..\..\inc\../inc/hw_flash.h
+.\bl_usb.o: ..\..\inc\../inc/hw_sysctl.h
+.\bl_usb.o: ..\..\inc\../inc/hw_types.h
+.\bl_usb.o: ..\..\inc\../inc/hw_nvic.h
+.\bl_usb.o: ..\..\inc\../inc/hw_usb.h
+.\bl_usb.o: ..\User_C\../User_h/bl_config.h
+.\bl_usb.o: ..\User_C\../User_h/bl_crystal.h
+.\bl_usb.o: ..\User_C\../User_h/bl_flash.h
+.\bl_usb.o: ..\..\inc\../driverlib/rom.h
+.\bl_usb.o: ..\User_C\../User_h/bl_hooks.h
+.\bl_usb.o: ..\User_C\../User_h/bl_usbfuncs.h
+.\bl_usb.o: ..\User_C\../User_h/usbdfu.h

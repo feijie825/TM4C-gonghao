@@ -1,0 +1,18 @@
+--cpu Cortex-M4.fp
+".\bl_check.o"
+".\bl_flash.o"
+".\bl_main.o"
+".\bl_packet.o"
+".\bl_uart.o"
+".\disp.o"
+".\gpio.o"
+".\sysctl.o"
+".\interrupt.o"
+".\systick.o"
+".\cpu.o"
+".\bl_startup_rvmdk.o"
+--library_type=microlib --strict --scatter ".\bl_link.sct"
+
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\UBoot.map" -o .\UBoot.axf

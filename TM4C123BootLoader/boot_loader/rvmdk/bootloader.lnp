@@ -1,0 +1,13 @@
+--cpu Cortex-M4
+".\rvmdk\bl_can.o"
+".\rvmdk\bl_check.o"
+".\rvmdk\bl_flash.o"
+".\rvmdk\bl_packet.o"
+".\rvmdk\bl_startup_rvmdk.o"
+--library_type=microlib
+--feedback ".\rvmdk\bootloader.fed" --feedback_image=none
+--strict --scatter ".\bl_link.sct"
+
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\rvmdk\bootloader.map" -o .\rvmdk\bootloader.axf

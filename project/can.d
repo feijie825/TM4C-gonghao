@@ -1,0 +1,12 @@
+.\can.o: ..\driverlib\can.c
+.\can.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdbool.h
+.\can.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdint.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_can.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_ints.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_nvic.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_memmap.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_sysctl.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_types.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/can.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/debug.h
+.\can.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/interrupt.h

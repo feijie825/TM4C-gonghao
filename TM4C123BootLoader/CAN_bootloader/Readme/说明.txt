@@ -1,0 +1,32 @@
+说明 引导程序中
+
+||Image$$SRAM$$ZI$$Base||
+||Image$$SRAM$$ZI$$Limit|| 由 bl_link_sct 编译产生
+
+CAN 总线引导程序 bl_can.c为主程序 bl_main.c在该引导程序中无用
+
+2013.5.27 开始运行后程序指针不进入 bl_startup_rmvdk.S,但不影响正常运行,运行完ProcessorInit后 程序指针会返回
+    bl      ProcessorInit       ;初始化 拷贝程序代码到RAM
+   ;
+    ; Branch to the SRAM copy of the reset handler.
+    ;
+    ldr     pc, =Reset_Handler_In_SRAM   ;程序跳转到 Reset_Handler_In_SRAM
+　
+原因为 下两句段分配后 出现问题 去掉后 程序指针能进入 bl_startup_rmvdk.S Reset_Handler
+;******************************************************************************
+;
+; This portion of the file goes into the text section.
+; 下边两句不定义 程序在ROM中执行
+; 定义后程序起始地址在RAM中
+;******************************************************************************
+    align   4
+    area    ||.text||, code, readonly, align=2
+
+实测数据 往FLASH中写8字节约需要200us 即烧写256k bytes 理想状态6.5秒完成 正常10秒内能完成
+
+可用
+
+2013.6.3   张力阵增加引导区更新是否使能命令   LM_API_UPD_BLEN
+2015.3.16  张力阵增加CAN引导响应ID号配置命令  LM_API_UPD_BOOTID 
+
+

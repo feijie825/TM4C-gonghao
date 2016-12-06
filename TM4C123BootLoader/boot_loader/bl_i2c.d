@@ -1,0 +1,9 @@
+bl_i2c.o: bl_i2c.c
+bl_i2c.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+bl_i2c.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_gpio.h
+bl_i2c.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_i2c.h
+bl_i2c.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_memmap.h
+bl_i2c.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_sysctl.h
+bl_i2c.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_types.h
+bl_i2c.o: bl_config.h
+bl_i2c.o: ..\..\SW-EK-TM4C123GXL-1.0\boot_loader/bl_i2c.h

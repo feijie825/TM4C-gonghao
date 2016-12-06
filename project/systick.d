@@ -1,0 +1,9 @@
+.\systick.o: ..\driverlib\systick.c
+.\systick.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdbool.h
+.\systick.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdint.h
+.\systick.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_ints.h
+.\systick.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_nvic.h
+.\systick.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_types.h
+.\systick.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/debug.h
+.\systick.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/interrupt.h
+.\systick.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/systick.h

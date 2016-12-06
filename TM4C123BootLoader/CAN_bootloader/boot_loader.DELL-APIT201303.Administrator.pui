@@ -1,0 +1,41 @@
+[Open Files]
+Active File Display Mode=3
+Active File Index=6
+Open File Line0=832
+Open File Line1=4586
+Open File Line2=1990
+Open File Line3=19586
+Open File Line4=336
+Open File Line5=0
+Open File Line6=34793
+Open File Pos0=12043
+Open File Pos1=4405
+Open File Pos2=2452
+Open File Pos3=20479
+Open File Pos4=12043
+Open File Pos5=80
+Open File Pos6=35813
+Open File Window Pos0=0,1,-1,-1,-4,-30,22,29,1308,352
+Open File Window Pos1=0,1,-1,-1,-4,-30,66,87,1352,410
+Open File Window Pos2=0,1,-1,-1,-4,-30,88,116,1374,439
+Open File Window Pos3=0,1,-1,-1,-4,-30,110,145,1396,468
+Open File Window Pos4=0,1,-1,-1,-4,-30,88,116,1374,439
+Open File Window Pos5=0,1,-1,-1,-4,-30,44,58,1330,381
+Open File Window Pos6=2,3,-1,-1,-4,-30,22,29,1308,352
+Open File0=F:\TI\timers.bin
+Open File1=F:\TI\TM4C1XX资料\init.c
+Open File2=F:\TI\temp.c
+Open File3=F:\TI\SW-DRL-1.0\driverlib\gpio.c
+Open File4=F:\TI\SW-EK-TM4C123GXL-1.0\examples\boards\ek-tm4c123gxl\timers\rvmdk\timers.bin
+Open File5=F:\TI\timers-T.bin
+Open File6=.\boot_loader\bl_can.c
+Open File7=
+Remember Files=1
+
+[Project Information]
+Project Start=DD07050001001B0009001C003A00000064
+Working Time=5
+
+[Folders]
+源程序=1
+

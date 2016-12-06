@@ -1,0 +1,5 @@
+--cpu Cortex-M4.fp "bl_startup_rvmdk.o" "bl_autobaud.o" "bl_can.o" "bl_check.o" "bl_decrypt.o" "bl_flash.o" "bl_main.o" "bl_packet.o" 
+--library_type=microlib --strict --scatter ".\bl_link.sct" 
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused 
+ --list ".\bootloader.map" -o bootloader.axf

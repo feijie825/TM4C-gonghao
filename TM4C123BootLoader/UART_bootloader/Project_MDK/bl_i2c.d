@@ -1,0 +1,9 @@
+.\bl_i2c.o: ..\User_C\bl_i2c.c
+.\bl_i2c.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\bl_i2c.o: ..\..\inc\../inc/hw_gpio.h
+.\bl_i2c.o: ..\..\inc\../inc/hw_i2c.h
+.\bl_i2c.o: ..\..\inc\../inc/hw_memmap.h
+.\bl_i2c.o: ..\..\inc\../inc/hw_sysctl.h
+.\bl_i2c.o: ..\..\inc\../inc/hw_types.h
+.\bl_i2c.o: ..\User_C\../User_h/bl_config.h
+.\bl_i2c.o: ..\User_C\../User_h/bl_i2c.h

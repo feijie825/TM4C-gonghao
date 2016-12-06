@@ -1,0 +1,9 @@
+.\udma.o: ..\driverlib\udma.c
+.\udma.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdbool.h
+.\udma.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdint.h
+.\udma.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_sysctl.h
+.\udma.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_types.h
+.\udma.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_udma.h
+.\udma.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/debug.h
+.\udma.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/interrupt.h
+.\udma.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/udma.h

@@ -1,0 +1,9 @@
+bl_check.o: bl_check.c
+bl_check.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+bl_check.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_gpio.h
+bl_check.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_memmap.h
+bl_check.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_sysctl.h
+bl_check.o: ..\..\SW-EK-TM4C123GXL-1.0\inc/hw_types.h
+bl_check.o: bl_config.h
+bl_check.o: ..\..\SW-EK-TM4C123GXL-1.0\boot_loader/bl_check.h
+bl_check.o: ..\..\SW-EK-TM4C123GXL-1.0\boot_loader/bl_hooks.h

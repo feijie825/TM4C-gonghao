@@ -1,0 +1,9 @@
+.\bl_ssi.o: ..\User_C\bl_ssi.c
+.\bl_ssi.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\bl_ssi.o: ..\..\inc\../inc/hw_gpio.h
+.\bl_ssi.o: ..\..\inc\../inc/hw_memmap.h
+.\bl_ssi.o: ..\..\inc\../inc/hw_ssi.h
+.\bl_ssi.o: ..\..\inc\../inc/hw_sysctl.h
+.\bl_ssi.o: ..\..\inc\../inc/hw_types.h
+.\bl_ssi.o: ..\User_C\../User_h/bl_config.h
+.\bl_ssi.o: ..\User_C\../User_h/bl_ssi.h

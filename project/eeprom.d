@@ -1,0 +1,13 @@
+.\eeprom.o: ..\driverlib\eeprom.c
+.\eeprom.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdbool.h
+.\eeprom.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdint.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_eeprom.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_flash.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_ints.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_sysctl.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_types.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/debug.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/flash.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/interrupt.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/sysctl.h
+.\eeprom.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/eeprom.h

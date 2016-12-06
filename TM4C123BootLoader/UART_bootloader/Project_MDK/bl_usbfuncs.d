@@ -1,0 +1,12 @@
+.\bl_usbfuncs.o: ..\User_C\bl_usbfuncs.c
+.\bl_usbfuncs.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\bl_usbfuncs.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\bl_usbfuncs.o: ..\..\inc\../inc/hw_types.h
+.\bl_usbfuncs.o: ..\..\inc\../inc/hw_memmap.h
+.\bl_usbfuncs.o: ..\..\inc\../inc/hw_usb.h
+.\bl_usbfuncs.o: ..\..\inc\../inc/hw_sysctl.h
+.\bl_usbfuncs.o: ..\..\inc\../inc/hw_nvic.h
+.\bl_usbfuncs.o: ..\..\inc\../inc/hw_ints.h
+.\bl_usbfuncs.o: ..\..\inc\../inc/hw_gpio.h
+.\bl_usbfuncs.o: ..\User_h\bl_config.h
+.\bl_usbfuncs.o: ..\User_C\../User_h/bl_usbfuncs.h

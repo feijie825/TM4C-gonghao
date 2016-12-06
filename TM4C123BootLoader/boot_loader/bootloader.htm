@@ -1,0 +1,226 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [F:\TI\SW-EK-TM4C123GXL-1.0\boot_loader\bootloader.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image F:\TI\SW-EK-TM4C123GXL-1.0\boot_loader\bootloader.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 69]: Last Updated: Fri May 24 09:55:37 2013
+<BR><P>
+<H3>Maximum Stack Usage =         64 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+Reset_Handler_In_SRAM &rArr; UpdaterCAN &rArr; PacketWrite &rArr; CANMessageSetTx
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[8]">ProcessorInit</a>
+ <LI><a href="#[7]">Reset_Handler</a>
+ <LI><a href="#[15]">StartApplication</a>
+ <LI><a href="#[d]">Delay</a>
+ <LI><a href="#[5]">Reset_Handler_In_SRAM</a>
+ <LI><a href="#[6]">UpdateHandler_In_SRAM</a>
+ <LI><a href="#[3]">IntDefaultHandler</a>
+ <LI><a href="#[1]">NmiSR</a>
+ <LI><a href="#[2]">FaultISR</a>
+ <LI><a href="#[4]">UpdateHandler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[d]">Delay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d]">Delay</a><BR>
+ <LI><a href="#[3]">IntDefaultHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">IntDefaultHandler</a><BR>
+ <LI><a href="#[1]">NmiSR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NmiSR</a><BR>
+ <LI><a href="#[2]">FaultISR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">FaultISR</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[2]">FaultISR</a> from bl_startup_rvmdk.o(RESET) referenced from bl_startup_rvmdk.o(RESET)
+ <LI><a href="#[3]">IntDefaultHandler</a> from bl_startup_rvmdk.o(.text) referenced 7 times from bl_startup_rvmdk.o(RESET)
+ <LI><a href="#[1]">NmiSR</a> from bl_startup_rvmdk.o(RESET) referenced from bl_startup_rvmdk.o(RESET)
+ <LI><a href="#[7]">Reset_Handler</a> from bl_startup_rvmdk.o(RESET) referenced from bl_startup_rvmdk.o(RESET)
+ <LI><a href="#[5]">Reset_Handler_In_SRAM</a> from bl_startup_rvmdk.o(.text) referenced from bl_startup_rvmdk.o(RESET)
+ <LI><a href="#[4]">UpdateHandler</a> from bl_startup_rvmdk.o(RESET) referenced from bl_startup_rvmdk.o(RESET)
+ <LI><a href="#[6]">UpdateHandler_In_SRAM</a> from bl_startup_rvmdk.o(.text) referenced from bl_startup_rvmdk.o(RESET)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[8]"></a>ProcessorInit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(RESET))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateHandler
+</UL>
+
+<P><STRONG><a name="[7]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessorInit
+</UL>
+
+<P><STRONG><a name="[15]"></a>StartApplication</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdaterCAN
+</UL>
+
+<P><STRONG><a name="[d]"></a>Delay</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckGPIOForceUpdate
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdaterCAN
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigureCAN
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+</UL>
+
+<P><STRONG><a name="[b]"></a>UpdaterCAN</STRONG> (Thumb, 594 bytes, Stack size 16 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = UpdaterCAN &rArr; PacketWrite &rArr; CANMessageSetTx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BLInternalFlashStartAddrCheck
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PacketWrite
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PacketRead
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartApplication
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdaterCAN
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler_In_SRAM
+</UL>
+
+<P><STRONG><a name="[c]"></a>AppUpdaterCAN</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = AppUpdaterCAN &rArr; UpdaterCAN &rArr; PacketWrite &rArr; CANMessageSetTx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigureCANInterface
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdaterCAN
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateHandler_In_SRAM
+</UL>
+
+<P><STRONG><a name="[a]"></a>ConfigureCAN</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28 + Unknown Stack Size
+<LI>Call Chain = ConfigureCAN &rArr; ConfigureCANInterface &rArr; CANMessageSetRx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigureCANInterface
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler_In_SRAM
+</UL>
+
+<P><STRONG><a name="[17]"></a>CheckGPIOForceUpdate</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, bl_check.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = CheckGPIOForceUpdate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckForceUpdate
+</UL>
+
+<P><STRONG><a name="[9]"></a>CheckForceUpdate</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, bl_check.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = CheckForceUpdate &rArr; CheckGPIOForceUpdate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckGPIOForceUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler_In_SRAM
+</UL>
+
+<P><STRONG><a name="[16]"></a>BLInternalFlashStartAddrCheck</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, bl_flash.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdaterCAN
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[5]"></a>Reset_Handler_In_SRAM</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = Reset_Handler_In_SRAM &rArr; UpdaterCAN &rArr; PacketWrite &rArr; CANMessageSetTx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdaterCAN
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigureCAN
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckForceUpdate
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bl_startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>UpdateHandler_In_SRAM</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = UpdateHandler_In_SRAM &rArr; AppUpdaterCAN &rArr; UpdaterCAN &rArr; PacketWrite &rArr; CANMessageSetTx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdaterCAN
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bl_startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>IntDefaultHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bl_startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NmiSR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bl_startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>FaultISR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bl_startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>UpdateHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, bl_startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessorInit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bl_startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>CANInit</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, bl_can.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigureCANInterface
+</UL>
+
+<P><STRONG><a name="[10]"></a>CANMessageSetRx</STRONG> (Thumb, 88 bytes, Stack size 12 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = CANMessageSetRx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigureCANInterface
+</UL>
+
+<P><STRONG><a name="[12]"></a>CANMessageGetRx</STRONG> (Thumb, 204 bytes, Stack size 24 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = CANMessageGetRx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PacketRead
+</UL>
+
+<P><STRONG><a name="[14]"></a>CANMessageSetTx</STRONG> (Thumb, 110 bytes, Stack size 24 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = CANMessageSetTx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PacketWrite
+</UL>
+
+<P><STRONG><a name="[e]"></a>ConfigureCANInterface</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ConfigureCANInterface &rArr; CANMessageSetRx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSetRx
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigureCAN
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdaterCAN
+</UL>
+
+<P><STRONG><a name="[11]"></a>PacketRead</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = PacketRead &rArr; CANMessageGetRx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageGetRx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdaterCAN
+</UL>
+
+<P><STRONG><a name="[13]"></a>PacketWrite</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, bl_can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = PacketWrite &rArr; CANMessageSetTx
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CANMessageSetTx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdaterCAN
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

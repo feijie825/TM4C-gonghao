@@ -1,0 +1,10 @@
+;#<FEEDBACK># ARM Linker, 5.03 [Build 69]: Last Updated: Fri May 24 09:55:36 2013
+;VERSION 0.2
+;FILE bl_can.o
+;FILE bl_check.o
+;FILE bl_flash.o
+BLInternalFlashErase <= USED 0
+BLInternalFlashErrorCheck <= USED 0
+BLInternalFlashErrorClear <= USED 0
+BLInternalFlashProgram <= USED 0
+BLInternalFlashSizeGet <= USED 0

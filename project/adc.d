@@ -1,0 +1,11 @@
+.\adc.o: ..\driverlib\adc.c
+.\adc.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdbool.h
+.\adc.o: D:\Keil_v5.22\ARM\ARMCC\Bin\..\include\stdint.h
+.\adc.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_adc.h
+.\adc.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_ints.h
+.\adc.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_memmap.h
+.\adc.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_types.h
+.\adc.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\inc/hw_sysctl.h
+.\adc.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/adc.h
+.\adc.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/debug.h
+.\adc.o: ..\..\TM4C123BH6PGE-V1.0.0-TEST\driverlib/interrupt.h

@@ -1,0 +1,44 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Include Sub Directories=1
+Project Tagfile=
+Project Wordfile=
+Project TpFile=
+Filter=
+Create Tagfile=0
+[Group]
+0=源程序
+1=头文件
+[Files - 源程序]
+0=bl_autobaud.c
+1=bl_can.c
+2=bl_check.c
+3=bl_config.c
+4=bl_decrypt.c
+5=bl_flash.c
+6=bl_i2c.c
+7=bl_main.c
+8=bl_packet.c
+9=bl_ssi.c
+10=bl_uart.c
+11=bl_usb.c
+12=bl_usbfuncs.c
+[Files - 头文件]
+0=bl_can.h
+1=bl_can_timing.h
+2=bl_check.h
+3=bl_commands.h
+4=bl_crystal.h
+5=bl_decrypt.h
+6=bl_flash.h
+7=bl_hooks.h
+8=bl_i2c.h
+9=bl_packet.h
+10=bl_ssi.h
+11=bl_uart.h
+12=bl_usbfuncs.h
+13=uip-conf.h
+14=usbdfu.h
