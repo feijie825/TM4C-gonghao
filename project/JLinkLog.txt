@@ -1114,3 +1114,8 @@ T139F8 003:829 JLINK_ReadMem (0x0000536C, 0x003C Bytes, ...) -- CPU_ReadMem(64 b
 T139F8 003:830 JLINK_ReadMem (0x000053A8, 0x003C Bytes, ...) -- CPU_ReadMem(64 bytes @ 0x000053C0) -- Updating C cache (64 bytes @ 0x000053C0) -- Read from C cache (60 bytes @ 0x000053A8) - Data: 28 46 BD E8 F0 81 0A 68 53 1C 0B 60 10 70 70 47 ...  returns 0x00 (0002ms, 1091ms total)
 T139F8 030:284 JLINK_ReadMem (0x000053E4, 0x001C Bytes, ...) -- Read from C cache (28 bytes @ 0x000053E4) - Data: FD F7 B2 FD FD F7 16 FB FC F7 38 FF FC F7 5E FF ...  returns 0x00 (0000ms, 1091ms total)
 T139F8 030:284 JLINK_ReadMem (0x00005400, 0x0020 Bytes, ...) -- CPU_ReadMem(64 bytes @ 0x00005400) -- Updating C cache (64 bytes @ 0x00005400) -- Read from C cache (32 bytes @ 0x00005400) - Data: 00 BF FF F7 25 FB FC F7 35 FB FA E7 08 AF 2F 00 ...  returns 0x00 (0002ms, 1093ms total)
+T1F178 030:284 
+  ***** Error: Connection to emulator lost! (82196752ms, 82197845ms total)
+T139F8 106675:821 JLINK_Close() (0262ms, 1355ms total)
+T139F8 106675:821  (0262ms, 1355ms total)
+T139F8 106675:821 Closed (0262ms, 1355ms total)

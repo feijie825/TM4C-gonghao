@@ -891,7 +891,7 @@ void Init_SysTick(void)
 *****************************************************************************/
 void Init_Ssi(void)
 {
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_SSI0);//使能SSI0时钟	
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_SSI0);//使能SSI0时钟
     SSIConfigSetExpClk(SSI0,Sysclk,\
                             SSI_FRF_MOTO_MODE_0,\
                             SSI_MODE_MASTER,\
